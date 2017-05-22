@@ -1,0 +1,62 @@
+<ion-content padding>
+     <ion-buttons end>
+      <div (click)="dismiss()">
+          <ion-icon  name="close"></ion-icon>
+      </div>
+    </ion-buttons>
+        <h1>Filtros de búsqueda</h1>
+
+    <div class="rango-busqueda">
+        <p>Nombre de la tienda</p>
+        
+        <div class="rangos">
+            <ion-searchbar [(ngModel)]="busqueda" placeholder="Pull and Bear">
+            </ion-searchbar>
+        </div>
+    </div>
+   
+    
+    <div class="rango-precio">
+        <p>Precio</p>
+        <div class="infor">
+            <p class="precio-min">{{precio.lower}}€</p>
+            <p class="precio-max">{{precio.upper}}€</p>
+        </div>
+        <div class="rangos">
+            <ion-item>
+            <ion-range dualKnobs="true" pin="true" [(ngModel)]="precio" color="dark" min="0" max="3000">
+
+            </ion-range>
+            </ion-item>
+        </div>
+    </div>
+
+    <div class="rango-fecha">
+        <p>Fecha</p>
+        
+        <div class="rangos">
+            <div class="desde">
+                <ion-label>Desde</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="event.start"></ion-datetime>
+            </div>
+            <div class="hasta">
+                <ion-label>Hasta</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="event.end"></ion-datetime>
+            </div>
+            <div class="limpiar"></div>
+        </div>
+    </div>
+
+    <div class="rango-ordenar">
+        <p>Ordenar por</p>
+        
+        <div class="rangos">
+            
+        </div>
+    </div>
+    
+
+ <p>
+    <button ion-button color="secondary" (click)="filtrar()"> Filtrar</button>
+  </p>
+</ion-content>

@@ -1,0 +1,123 @@
+page-detalle-producto {
+
+    
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+        padding: 0 20px;
+        color: $primary;
+    }
+   h2{
+       color: $primary;
+       padding: 0 20px;
+       text-align: left;
+       font-size: 30px;
+   }
+
+    .imagen{
+        background-image: url(../assets/fondos/fondo.jpg);
+        height: 35vh;
+       position:relative;
+       background-size: cover;
+       text-align: center;
+    }
+
+     .cant{
+         text-align: center
+    }
+
+    .cantidad{
+        border: 1px solid #a3a3a3;
+        background: #a3a3a3;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .contador{
+        border: 1px solid #a3a3a3;
+        padding: 10px;
+        color: #000;
+    }
+
+    .contador2{
+        border: 1px solid #a3a3a3;
+        padding: 10px;
+        color: #000;
+    }
+
+    ion-col{
+        text-align: center;
+    }
+
+    ion-grid{
+        padding: 0;
+    }
+
+    .numberCircle {
+        font-size: 12px;
+        background: #ff0000;
+        color: #fff;
+        padding: 0 2px;
+        border-radius: 5px;
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 8px;
+    }
+    .num-producto{
+        color: #aaa;
+        padding: 0 20px;
+    }
+
+    .tutorial{
+        text-align: center;
+        background: $primary;
+        border-radius: 10px;
+        color: #fff;
+        padding: 3px 0;
+        width:80px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    ion-fab{
+        position:relative;
+    }
+   .fab{
+       width: 50px;
+       height: 50px;
+       margin: auto;
+   }
+
+   ion-fab img{
+       height: 25px;
+       width: 25px;
+   }
+
+   .imagen img{
+       height:80%;
+       margin-top: 20px;
+   }
+   .anterior{
+       color: #ff0000;
+       text-decoration:line-through;
+       margin-top: -10px;
+   }
+}
+ 

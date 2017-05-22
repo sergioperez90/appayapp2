@@ -1,0 +1,31 @@
+page-detalle-tienda {
+
+        ion-segment{
+            background: #124670;
+        }
+        .content-md{
+            background-color:#eee;
+            //filter: blur(6px);
+        }
+        .card-md {
+            margin-top:15px;
+        }
+        .item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input{
+            margin-left:10px;
+        }
+
+        ion-label.label.label-md{
+            color: #000;
+        }
+        .item-md ion-icon[item-left], .item-md ion-icon[item-right]{
+            margin-left: 10px;
+        }
+}
+
+.platform-ios page-detalle-tienda ion-segment{
+    width: 70%; 
+    height: 3.2rem;
+    margin: auto;
+    background: none;
+    margin-top: 10px;
+}

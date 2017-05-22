@@ -1,0 +1,68 @@
+<ion-header no-shadow no-border>
+  <ion-navbar color="primary" >
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+   
+    <ion-title>Mi Perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content scroll>
+ <div  id="fondoperfil">
+   <img margin-top [src]="foto" />
+    <ion-fab>
+      <button (click)="SeleccionarGaleria();" color="secondary" mini ion-fab><ion-icon name='camera' item-right style="color: gray"></ion-icon></button>
+   </ion-fab>
+   
+   <h2>{{nombre}}</h2>
+ </div>
+
+ <div no-margin id="misdatos">
+   <h3 no-margin>Mis datos</h3>
+ </div>
+
+<div id="formulario">
+
+
+    <ion-item>
+      <ion-label active activated color="primary" stacked>Correo electrónico</ion-label>
+      <ion-input  id="correo" type="email" [value]="email"></ion-input>
+       <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+      <ion-item>
+      <ion-label color="primary" stacked>DNI</ion-label>
+      <ion-input type="text" [value]="dni"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Nombre</ion-label>
+      <ion-input color="#fffff" type="text" [value]="nombre"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Dirección</ion-label>
+      <ion-input type="text" [value]="direccion"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Código Postal</ion-label>
+      <ion-input type="text" [value]="cp"></ion-input>
+      <ion-icon name='create' item-right style="color: gray"></ion-icon>
+    </ion-item>
+
+    
+
+
+</div>
+<div id="containerboton">
+      <button id="botonacceder" ion-button >
+      Guardar datos
+    </button>
+</div>
+</ion-content> 
+ 

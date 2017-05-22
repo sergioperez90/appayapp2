@@ -1,0 +1,30 @@
+<ion-content class="tutorial-page">
+
+  <ion-slides pager>
+   
+    <ion-slide *ngFor="let slide of slides">
+      
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="next()">Saltar</button>
+        </ion-buttons>
+      </ion-toolbar>
+    
+      <img [src]="slide.image" class="slide-image"/>
+    
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+
+    </ion-slide>
+      <ion-slide>
+        <ion-toolbar></ion-toolbar>
+          <img src="assets/img/Salir.png" class="slide-image"/>
+        <h2 class="slide-title">Ya puedes marcharte!</h2>
+        <p>De esta forma tan rápida, cuando el <b>Pago</b> este realizado, podrás abandonar la tienda sin necesidad de realizar colas ni pasar por caja.</p>
+
+        <button ion-button color="primary" (click)="next()" outline>Empezar</button>
+
+      </ion-slide>
+  </ion-slides>
+  
+</ion-content>

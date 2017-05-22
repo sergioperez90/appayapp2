@@ -1,0 +1,43 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>Finalizar Pago</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+<div id="modal">
+  <div class="object"> <img [src]="'assets/img/pago.jpg'"/><span>{{total_pagar}} €</span></div>
+  <form>
+    <input type="radio" id="Master" name="card" required="required"/>
+    <label class="card" for="Master"></label>
+    <input type="radio" id="Visa" name="card" required="required"/>
+    <label class="card" for="Visa"></label>
+    <input type="radio" id="Discover" name="card" required="required"/>
+    <label class="card" for="Discover"></label><br/>
+    <label for="name">NOMBRE  </label>
+    <input type="text" placeholder="Nombre completo" id="name" Required="Required"/><br/>
+    <label for="number">NÚMERO DE TARJETA </label>
+    <input type="number" maxlength="16" placeholder="0000 0000 0000 0000" id="number" Required="Required"/><br/>
+    <label for="expire">EXPIRA EL </label>
+    <input type="text" maxlength="5" placeholder="MM/YY" id="expire" Required="Required"/>
+    <label for="cvc">CVC</label>
+    <input type="number" maxlength="3" placeholder="000" id="cvc" Required="Required"/><br/>
+   <!-- <button type="submit">Confirmar pago de 204.08 €</button> -->
+  </form>
+</div>
+  
+</ion-content>
+
+
+ <ion-footer class="pie" no-border no-shadow >
+    <ion-toolbar color="light" hide-on-scroll="true">
+      <ion-grid>
+        <ion-row center>
+          <ion-col width-50 class="linea-total"><span class="total" color="primary">Total</span> <strong>{{total_pagar}} €</strong></ion-col>
+          <ion-col width-50 class="boton-pagar"><button (click)="showAlert()" ion-button color="primary"><ion-icon name="card"></ion-icon>Confirmar</button></ion-col>
+        </ion-row>
+     </ion-grid>
+    </ion-toolbar>
+  </ion-footer>

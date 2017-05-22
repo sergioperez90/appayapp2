@@ -1,0 +1,134 @@
+page-pago {
+    .content-md{
+        background-color: #eee;
+         text-align:center;
+    }
+    span{
+        color:white;
+    }
+    #modal {
+    color:white;
+    position: relative;
+    overflow-y: hidden;
+    }
+    #modal #header {
+    background: #eee;
+    }
+    #modal #header h1 {
+    font: 300 25px Roboto;
+    margin: 0;
+    padding: 10px;
+    }
+    #modal .object {
+    position: relative;
+    background: #eee;
+    }
+    #modal .object img {
+    width: 100%;
+    }
+    #modal .object span {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    font-size: 3.5em;
+    }
+    #modal form {
+    background: #eee;
+    padding-top: 6px;
+    }
+    #modal form input[type='radio'] {
+    display: none;
+    }
+    #modal form input[type="radio"]:checked + label {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    
+    }
+    #modal form label.card {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    }
+    #modal form label[for='Master'] {
+    background: url("http://cbwconline.com/IMG/Codepen/Mastercard.svg");
+    background-size: contain;
+    }
+    #modal form label[for='Visa'] {
+    background: url("http://cbwconline.com/IMG/Codepen/Visa.svg");
+    background-size: contain;
+    }
+    #modal form label[for='Discover'] {
+    background: url("http://cbwconline.com/IMG/Codepen/Discover.svg");
+    background-size: contain;
+    }
+    #modal form label {
+        color: black;
+    position: absolute;
+    margin-left: 5px;
+    text-transform: uppercase;
+    }
+    #modal form input {
+    color:black;
+    background: white;
+    font: 300 18px Roboto;
+    display: inline-block;
+    margin: 25px 5px 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    }
+    #modal form #name, #modal form #number {
+    width: 88%;
+    }
+    #modal form #expire {
+    width: calc(50% - 30px);
+    }
+    #modal form #cvc {
+    width: 38%;
+    }
+    #botonacceder {
+    background: #FF304F;
+    color: white;
+    font: 300 18px Roboto;
+    height: 50px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left:-45%;
+    left:50%;
+    position: fixed;
+
+    bottom: 0px;
+    text-transform: none;
+    }
+
+   .linea-total{
+       text-align: right;
+       color: $primary;
+   }
+
+   .linea-total strong{
+        font-size: 25px;
+   }
+   
+    .linea-total .total{
+        font-size: 16px;
+    }
+   
+    .boton-pagar{  
+        text-align: center;
+    }
+
+    .boton-pagar ion-icon{
+        margin-right: 5px;
+    }
+    .boton-pagar button{
+        font-size: 18px;
+    }
+
+}
+
+ 

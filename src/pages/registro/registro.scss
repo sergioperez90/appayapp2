@@ -1,0 +1,61 @@
+page-registro {
+    #logo{
+    width:50%;
+    opacity: 0.8;
+}
+    .toolbar-background-md {
+        border-color: none; 
+        background: none; 
+    }
+    .toolbar-title-md{
+        color:white;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+        color: white;
+    }
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before
+    {
+        background-image:none;
+    }
+
+    #botonacceder{
+        padding-bottom: 23px;
+        text-transform: none;
+        width: 100%;
+        font-size: 1.15em;
+        padding-top: 23px;
+        color: white;
+        background-color: #cc3d4a;
+    }
+    .list-md{
+    }
+    p{
+        color:white;
+    }
+    a{
+        text-decoration:underline;
+        color: white;
+    }
+     ion-content{
+        background-image: url('../assets/img/backgroundv2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+
+    ion-icon{
+        padding-left: 20px;
+    }
+    ion-item.item.item-block.item-md.item-input{
+        margin-bottom: 10px;
+    }
+
+    .list-md ion-item{
+        margin-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+    }
+    .list-md{
+        margin-top: 20px;
+    }
+}

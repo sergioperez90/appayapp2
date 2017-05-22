@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+     <ion-buttons end>
+      <button (tap) = "carrito()" ion-button icon-only color="royal">
+         <div class="numberCircle">{{cant_total}}</div>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/logo-letras.png" height="30"/>
+    </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content class="scan">
+
+  <p>Escanea el <strong>código QR</strong> de la tienda</p>
+  <p><img class="qr" src="assets/qr.png"/></p>
+
+    <ion-fab right bottom>
+      <button ion-fab color="primary" (tap)="scan()"><img src="assets/qr-white.png" height="40" /></button> 
+    </ion-fab>
+    
+</ion-content>

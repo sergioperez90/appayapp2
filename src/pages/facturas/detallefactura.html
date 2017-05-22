@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+     Factura {{ factura.title }}
+    </ion-title>
+     <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <img src="assets/pdf.png" class="pdf"/>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+            <ion-card-content>
+                  <ion-row class="info">
+                      <ion-col><strong>{{ factura.title }} </strong></ion-col>
+                      <ion-col class="num-fact">NUM: {{ factura.id }}</ion-col>
+                  </ion-row>
+
+                  <ion-row class="info">
+                    <ion-col class="direccion">{{ factura.direccion }} - {{ factura.ciudad }} ({{ factura.provincia }}) {{ factura.cp }}</ion-col>
+                  </ion-row>
+
+                  <ion-row class="info">
+                    <ion-col class="fecha">{{ factura.fecha }}</ion-col>
+                  </ion-row>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    
+  </ion-grid>
+
+
+  <ion-card class="productos">
+    <ion-row *ngFor="let l of lineas">
+      <ion-col width-10>{{l.cantidad}}<span class="cant">x</span></ion-col>
+      <ion-col width-50>{{l.nombre}}</ion-col>
+      <ion-col width-20>{{l.precio_producto}}€</ion-col>
+      <ion-col width-20><strong class="precio">{{l.total_linea}}€</strong></ion-col>
+    </ion-row>
+    
+   
+  
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer class="pie" no-border no-shadow >
+    <ion-toolbar color="light" hide-on-scroll="true">
+      <ion-row>
+        <ion-col width-30 class="importe"><strong color="primary">Importe: {{importe}}€</strong> <br><span color="primary">IVA: {{iva}}€</span></ion-col>
+        <ion-col width-30 class="total"><strong  color="primary">{{factura.importe}}€</strong></ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>

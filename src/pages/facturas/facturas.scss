@@ -1,0 +1,64 @@
+page-facturas {
+        .item-md ion-thumbnail{
+            min-width: 0;
+            min-height: 0;
+        }
+        ion-row{
+            width:0;
+        }
+        button.button.button-md.button-default.button-default-md {
+            background-color: #ff0000;
+            padding: 0 20px;
+        }
+
+        ion-icon {
+        font-size: 2.0em;
+        color: #fff;
+        }
+
+        ion-label.label.label-md {
+        }
+
+        b{
+            font-size: 2rem;
+            color: black;
+        }
+
+        .item-md ion-thumbnail img{
+            height: 10px;
+            float: left;
+        }
+
+        .card-content-md{
+            padding: 0 0 0 10px;
+        }
+
+        ion-col{
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+
+        .titulo-tienda, .precio-factura{
+            font-weight: bold;
+        }
+
+        .precio-factura{
+            font-size: 1.5rem;
+            position: absolute;
+            right: 10px;
+            color: #124670;
+        }
+
+        .item-md.activated{
+            background: #eee;
+        }
+
+        .label-md{
+        margin: 0;
+        }
+      button.botones-facturas.item.item-block.item-md{
+          padding: 10px;
+          border-bottom: 1px solid #eee;
+      }
+        
+}

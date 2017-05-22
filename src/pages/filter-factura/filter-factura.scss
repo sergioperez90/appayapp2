@@ -1,0 +1,136 @@
+page-filter-factura {
+    .content-ios{
+        background: rgba(18, 70, 112, 0.9);
+    }
+    .content-md{
+        background: rgba(18, 70, 112, 0.9);
+    }
+    ion-icon{
+        color: #fff;
+        font-size: 2.0em;
+    }
+    h1{
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+    .item-md{
+        background: none;
+    }
+    .item-md.item-block .item-inner, .item-ios.item-block .item-inner{
+        border: none;
+    }
+
+    .precio-min{
+        color: #fff;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 16px;
+        float: left;
+    }
+    .precio-max{
+        color: #fff;
+        font-weight: bold;
+        margin-right: 50px;
+        font-size: 16px;
+        float: right;
+    }
+
+    .infor{
+       position: absolute;
+       width: 100%;
+    }
+
+    .rangos{
+        padding-top: 15px;
+    }
+
+    .rango-precio{
+        border-bottom: 1px dashed #fff;
+        border-top: 1px dashed #fff;
+        padding-bottom: 10px;
+
+    }
+    .rango-fecha{
+        border-bottom: 1px dashed #fff;
+        padding-bottom: 10px;
+    }
+    
+    .rango-busqueda{
+        border-top: 1px dashed #fff;
+        padding-bottom: 10px;
+    }
+
+    .rango-ordenar{
+        border-bottom: 1px dashed #fff;
+    }
+
+    .rango-precio p, .rango-fecha p, .rango-busqueda p, .rango-ordenar p{
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: -15px;
+    }
+
+    .button-md, .button-ios{
+        width: 100%;
+    }
+    .datetime-text{
+        color: #fff;
+        font-weight: bold;
+    }
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md, .item-input .label-ios, .item-select .label-ios, .item-datetime .label-ios, ion-label#lbl-19, ion-label#lbl-20, ion-label#lbl-21{
+        color: #fff;
+    }
+  
+   ion-item.item.item-block.item-md.item-range, ion-item.item.item-block.item-md.item-datetime.input-has-value{
+       background: none;
+   }
+   ion-item.item.item-block.item-ios.item-range, ion-item.item.item-block.item-ios.item-datetime.input-has-value, ion-item.item.item-block.item-md.item-select, ion-list.list.list-ios, ion-item.item.item-block.item-ios.item-checkbox{
+       background: none;
+   }
+
+   .searchbar-ios{
+       background: none;
+   }
+   .select-text{
+        color: #fff;
+        font-weight: bold;
+   }
+
+   .desde{
+       float: left;
+   }
+   .hasta{
+       float: right;
+   }
+   .limpiar{
+       clear: both;
+   }
+   .rango-fecha ion-label{
+       text-align: center;
+       color: #fff;
+       font-weight: bold;
+       margin-top: -2px;
+   }
+
+   .rango-fecha ion-datetime{
+       margin-top: -15px;
+   }
+   .item-cover{
+       position: none;
+       width: 0;
+       height: 0;
+   }
+   .range-md .range-knob-pressed .range-pin, .range-ios .range-knob-pressed .range-pin{
+       display: none;
+   }
+   .range-ios .range-slider,  .range-md .range-slider{
+       margin-top: -10px;
+   }
+   
+   }
+   

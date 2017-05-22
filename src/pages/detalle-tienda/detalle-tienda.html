@@ -1,0 +1,74 @@
+<!--
+  Generated template for the DetalleTienda page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Tienda</ion-title>
+  </ion-navbar>
+
+  <ion-segment [(ngModel)]="tienda">
+      <ion-segment-button value="info">
+       Info
+      </ion-segment-button>
+      <ion-segment-button value="ofertas">
+        Ofertas
+      </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card>
+        <img [src]="'assets/img/foto.jpg'"/>
+
+            <ion-card-content>
+              <ion-card-title>
+                Zara Alicante
+              </ion-card-title>
+              <p>
+              ZARA es una cadena de tiendas de moda española perteneciente al grupo Inditex fundada por Amancio Ortega Gaona.
+              </p>
+            </ion-card-content>
+
+            <ion-item>
+              <ion-icon name='calendar' item-left style="color: gray"></ion-icon>
+              Horario <p>9:00 a 18:00</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='home' item-left style="color: gray"></ion-icon>
+              Dirección <p>Paseo de las Azucenas 8A</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='call' item-left style="color: #50DFA7"></ion-icon>
+              Teléfono <p> 965669250 </p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='mail' item-left style="color: #d03e84"></ion-icon>
+              Correo <p>ZaraAlicante@zara.com</p>
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='logo-facebook' item-left style="color:	#3b5998"></ion-icon>
+              Facebook
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='logo-twitter' item-left style="color: #55acee"></ion-icon>
+              Twitter
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+          </ion-card>
+
+</ion-content>

@@ -1,0 +1,13 @@
+{
+  "name": "Appay",
+  "short_name": "Appay",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/logo.png",
+    "sizes": "1000x1000",
+    "type": "image/png"
+  }],
+  "background_color": "#4e8ef7",
+  "theme_color": "#4e8ef7"
+}

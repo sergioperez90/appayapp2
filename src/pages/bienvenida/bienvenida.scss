@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+page-bienvenida {
+     ion-content{
+        background-image: url('../assets/img/backgroundv2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+    #logo{
+    margin-top:10%;
+    width:60%;
+}
+h1{
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+        font-family: 'Raleway', sans-serif;
+
+}
+p{
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    margin-top: -5px;
+}
+}

@@ -1,0 +1,12 @@
+page-contact {
+    button.enviar{
+        text-align: center;
+    }
+    ion-input, ion-textarea{
+        border-bottom: 1px solid $primary;
+    }
+    p.info{
+        font-size: 14px;
+        text-align: center;
+    }
+}

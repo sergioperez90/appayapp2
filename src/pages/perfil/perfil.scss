@@ -1,0 +1,81 @@
+page-perfil {
+    #fondoperfil{
+        height:38vh;
+        background-color:$primary;
+        padding-top:1px;
+        text-align:center;
+        color:white;
+    }
+    .body{
+     //  background:#ececec;
+    }
+ 
+
+    img{
+        width: 150;
+        height: 150px;
+        border-radius: 300px;
+        border: 3px solid white;
+      
+    }
+    h2{
+        margin-top: 5px;
+    }
+    .iconocamara{
+        position:relative;
+        top:-34px;
+    }
+    .fab-md-danger {
+    margin: 0;
+    right: 0;
+    margin-left: 80%;
+        bottom: -25px;
+}
+
+
+#misdatos{
+    height: 60px;
+    background: #07243c;
+    color: white;
+    text-align: center;
+}
+ h3{
+     padding-top: 16px;
+ }
+
+ #formulario{
+     padding-left:16px;
+     margin-right:16px;
+ }
+
+ #containerboton{
+    height:100px;
+    text-align: center;
+ }
+
+    #botonacceder{
+        text-transform: none;
+        width: 80%;
+        font-size: 1.15em;
+        color: white;
+        background-color: #f53d3d;
+        margin-bottom:70px;
+        margin-top:20px;
+    }
+    .label-md-primary, .item-input .label-md-primary, .item-select .label-md-primary, .item-datetime .label-md-primary{
+        font-size:1.1em;
+    }
+
+    .item-md{
+         border-bottom: 0.5px solid darkgrey;
+    }
+
+    .item-md.item-label-stacked [item-right], .item-md.item-label-floating [item-right]{
+        margin-top: 33px;
+        margin-bottom: 7px;
+        font-size: 1.5em;
+    }
+ion-fab{
+    margin-left: -50px;
+}
+}

@@ -1,0 +1,139 @@
+page-detallefactura {
+       
+       .card-md{
+           margin: 0;
+           width: calc(100%);
+       }
+       .card-md p{
+           text-align: left;
+       }
+        ion-row{
+            float:left;
+            width:100%;
+        }
+       
+        b {
+            font-size: 4rem;
+            color: black;
+            }
+        
+        ion-thumbnail img {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+
+        .info p{
+            font-size: 12px;
+        }
+
+        img.pdf{
+            height: 30px;
+            width: 30px;
+        }
+        .productos{
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        p span{
+            font-weight: bold;
+
+        }
+        span.id-factura{
+            float: right;
+            color: grey;
+        }
+        .info p{
+            font-size: 14px;
+        }
+        .info strong{
+            font-size: 16px;
+        }
+
+        .num-fact{
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .fecha{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+       .productos ion-card-content span{
+            font-weight: bold;
+            float: right;
+        }
+
+        ion-footer ion-title{
+            text-align: center;
+        }
+       
+     
+        .iva{
+            font-size: 12px;
+        }
+
+        .pie p{
+            font-size: 12px;
+            color: #124670;
+            margin-top: 0px;
+            padding: 0 16px;
+        }
+        .productos ion-card-content {
+            border: 1px solid #eee;
+        }
+
+        .total{
+            font-size: 20px;
+            text-align: right;
+        }
+        .iva{
+            text-align: center;
+        }
+        
+     
+        
+        .productos ion-row{
+            padding: 3px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pie ion-row{
+            padding: 3px;
+        }
+        .pie ion-col[width-40]{
+            margin-top: 5px;
+            font-size:12px;
+        }
+
+        ion-col[width-20]{
+            text-align: right;
+        }
+        ion-col[width-30].importe{
+            margin-top: 7px;
+        }
+        .toolbar-md{
+            padding: 0 16px;
+        }
+      
+      .direccion{
+          font-size:11px;
+      }
+      ion-card-content{
+          margin-top: -7px;
+      }
+      .cant{
+            font-size: 10px;
+      }
+      .moneda{
+          font-size: 14px;
+      }
+  
+}

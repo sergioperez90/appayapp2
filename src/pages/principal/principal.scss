@@ -1,0 +1,46 @@
+page-principal {
+
+      ion-content{
+        background-image: url('../assets/img/backgroundv2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+#logo{
+    margin-top:10%;
+    width:60%;
+}
+
+
+.botoneslogin{
+    padding-bottom: 23px;
+    text-transform: none;
+    width: 90%;
+    font-size: 1.15em;
+    padding-top: 23px;
+    color:white;
+}
+
+.botonescorreo{
+    padding-bottom: 23px;
+    text-transform: none;
+    width: 43.5%;
+    font-size: 1.15em;
+    padding-top: 23px;
+    color: white;
+    border-color: white;
+    margin-top:3%;
+}
+#face{
+    margin-top: 30%;  
+    color: white;
+    background-color: #3b5998;
+}
+#google{
+     background-color: #df4a32;
+}
+[icon-left] ion-icon{
+    font-size: 1.6em;
+}
+
+}

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button (tap) = "carrito()" ion-button icon-only color="royal">
+          <div *ngIf="vacio==false" class="numberCircle">{{cant_total}}</div>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+     Appay
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <div id="map">
+       <!--Boton de escanear producto-->
+  <ion-fab *ngIf="scanTienda" right bottom>
+    <button ion-fab color="primary"><img src="assets/code.png" height="30" /></button>
+    <ion-fab-list side="top">
+      <button (click)="escanearProducto()" ion-fab color="primary"><img src="assets/code.png"/></button>
+      <button (click)="codigoMano()" ion-fab><ion-icon name="create"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  <!--Boton de escanear tienda-->
+  <ion-fab *ngIf="!scanTienda" right bottom>
+      <button ion-fab color="primary" (tap)="escanearTienda()"><img src="assets/qr-white.png" height="40" /></button> 
+    </ion-fab>
+    
+ </div>
+</ion-content>

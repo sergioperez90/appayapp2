@@ -1,0 +1,93 @@
+page-carrito {
+    .content-md{
+        background-color: #eee;
+    }
+    ion-note {
+        font-size: 12px;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+    .iconoeliminar{
+        font-size: 1.4em;
+    }
+   .linea-total{
+       text-align: right;
+       color: $primary;
+   }
+   .linea-total strong{
+        font-size: 25px;
+   }
+    .linea-total .total{
+        font-size: 16px;
+    }
+   
+    .boton-pagar{  
+        text-align: center;
+    }
+
+    .boton-pagar ion-icon{
+        margin-right: 5px;
+    }
+    .boton-pagar button{
+        font-size: 18px;
+    }
+
+    .card-md{
+        margin: 0;
+        width: calc(100% - 0px)
+    }
+    .list-md ion-item-sliding{
+        border-bottom: 1px solid #eee;
+    }
+    .cant{
+        margin-top: 20px;
+    }
+
+    .cantidad{
+        border: 1px solid #a3a3a3;
+        background: #a3a3a3;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .contador{
+        border: 1px solid #a3a3a3;
+        padding: 10px;
+        color: #000;
+    }
+
+    .contador2{
+        border: 1px solid #a3a3a3;
+        padding: 10px;
+        color: #000;
+    }
+
+    h2{
+        font-weight:bold;
+    }
+    .item-md ion-avatar ion-img, .item-md ion-avatar img{
+        margin-left: 10px;
+    }
+   
+
+    .carrito-vacio img{
+        height: 200px;
+    }
+    .carrito-vacio{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .carrito-vacio p{
+        color: #b2b2b2;
+        font-size: 20px;
+    }
+    ion-note.cant.note.note-md{
+        margin: 25px 8px 9px 0;
+    }
+    ion-note.cant.note.note-ios{
+        margin: 25px 8px 9px 0;
+    }
+    
+}
+ 

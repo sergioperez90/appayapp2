@@ -1,0 +1,91 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalles de tienda</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <!-- <button ion-button id="botoncerrar" (click)="closeModal()">Cerrar</button> -->
+  <!-- <button ion-fab mini danger class="botoncerrar" (click)="closeModal()"><ion-icon name="close" ></ion-icon></button> -->
+<ion-segment [(ngModel)]="tienda">
+    <ion-segment-button value="info">
+      Información
+    </ion-segment-button>
+    <ion-segment-button value="ofertas">
+      Ofertas
+    </ion-segment-button>
+</ion-segment>
+
+<div [ngSwitch]="tienda">
+  <ion-list *ngSwitchCase="'info'">
+    <ion-item>
+      
+      <ion-card>
+        <img [src]="'assets/img/foto.jpg'"/>
+
+            <ion-card-content>
+              <ion-card-title>
+                Zara Alicante
+              </ion-card-title>
+              <p>
+              ZARA es una cadena de tiendas de moda española perteneciente al grupo Inditex fundada por Amancio Ortega Gaona.
+              </p>
+            </ion-card-content>
+
+            <ion-item>
+              <ion-icon name='calendar' item-left style="color: gray"></ion-icon>
+              Horario <p>9:00 a 18:00</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='home' item-left style="color: gray"></ion-icon>
+              Dirección <p>Paseo de las Azucenas 8A</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='call' item-left style="color: #50DFA7"></ion-icon>
+              Teléfono <p> 965669250 </p>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='mail' item-left style="color: #d03e84"></ion-icon>
+              Correo <p>ZaraAlicante@zara.com</p>
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='logo-facebook' item-left style="color:	#3b5998"></ion-icon>
+              Facebook
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name='logo-twitter' item-left style="color: #55acee"></ion-icon>
+              Twitter
+              <ion-icon name='ios-arrow-forward' item-right style="color: gray"></ion-icon>
+            </ion-item>
+
+          </ion-card>
+
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'ofertas'">
+    <ion-item>
+      
+        <h2>Ofertas de la tienda</h2>
+
+    </ion-item>
+  </ion-list>
+
+</div>
+
+
+
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-menu [content]="content">
+<ion-content>
+    <div menuClose class="cabecera-menu" (tap)="NavegarPerfil()">
+      <img [src]="foto" height="80"/>
+      <p class="nombre"><strong>{{nombre}}</strong></p>
+      <p class="correo">{{email}}</p>
+    </div>
+    <ion-list class="lista-menu1">
+      <button menuClose class="solution" ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon [name]="p.icon"></ion-icon>
+        {{p.title}}
+      </button>
+      <button *ngIf="scanTienda" class="solution" menuClose ion-item (click)="cambiarTienda();">
+          <ion-icon name="qr-scanner"></ion-icon>
+        Cambiar tienda
+      </button>
+    </ion-list>
+
+    <!--Esto habra que cambiarlo conforme se vayan haciendo las paginas, en forma de array como en la parte de arriba -->
+    <ion-list class="lista-menu2">
+        <button menuClose class="solution" ion-item *ngFor="let p of pages2" (click)="openPage(p)">
+          <ion-icon [name]="p.icon"></ion-icon>
+        {{p.title}}
+       </button>
+       <button class="solution" menuClose ion-item (click)="CerrarSesion();">
+          <ion-icon name="exit"></ion-icon>
+        Cerrar Sesión
+      </button>
+      
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
